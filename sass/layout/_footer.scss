@@ -1,0 +1,29 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $color-section;
+
+  &-container {
+    @include flexbox(baseline);
+  }
+
+  &-box-contacts {
+    margin-right: 70px;
+    min-width: 231px;
+    text-align: start;
+  }
+
+  &-box-form {
+    margin-left: auto;
+  }
+
+  &-label {
+    @extend %nomargin;
+    margin-bottom: 20px;
+
+    @include typography-label;
+    text-align: start;
+    color: $text-on-dark;
+    text-transform: uppercase;
+  }
+}
