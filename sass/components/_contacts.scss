@@ -5,12 +5,12 @@
   @include flexbox();
   @include typography(500, 14px, 1.14, 0.02em);
 
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
 
   /* Параметры ссылок для обратной связи */
-  &-link {
+  &__link {
     @extend %link;
     @include flexbox(center);
     padding: 32px 0px;
@@ -20,21 +20,21 @@
       color $time $time-function;
   }
 
-  &-icon {
+  &__icon {
     margin-right: 10px;
     fill: $text-main;
     transition: fill $time $time-function;
   }
 
-  &-link:hover &-icon,
-  &-link:focus &-icon {
+  &__link:hover &__icon,
+  &__link:focus &__icon {
     fill: $color-accent;
   }
 
   /*  hover и focus для ссылок навигации по сайту*/
 
-  &-link:hover,
-  &-link:focus {
+  &__link:hover,
+  &__link:focus {
     color: $color-accent;
   }
 }

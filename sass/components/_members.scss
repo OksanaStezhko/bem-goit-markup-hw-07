@@ -2,7 +2,7 @@
   @extend %list;
   @include flexbox($wrap: wrap);
 
-  &-card {
+  &__card {
     @include flexbox(center);
     flex-direction: column;
     width: calc((100% - 30px * 3) / 4);
@@ -12,18 +12,18 @@
     box-shadow: $shadow-card-members;
   }
 
-  &-card:not(:nth-child(4n)) {
+  &__card:not(:nth-child(4n)) {
     margin-right: 30px;
   }
 
-  &-title {
+  &__title {
     @extend %nomargin;
     padding-top: 30px;
     padding-bottom: 30px;
 
     @include typography-title;
   }
-  &-name {
+  &__name {
     @extend %nomargin;
     margin-bottom: 10px;
 
@@ -31,7 +31,7 @@
     color: $text-header;
   }
 
-  &-position {
+  &__position {
     @extend %nomargin;
     margin-bottom: 10px;
 

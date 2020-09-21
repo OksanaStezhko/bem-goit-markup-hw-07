@@ -1,18 +1,18 @@
 .navigation {
   @extend %nomargin;
   @include flexbox(center);
+}
 
-  &-list {
-    @extend %list;
-    @include flexbox();
-    @include typography(500, 14px, 1.14, 0.02em);
-  }
+.navigation-list {
+  @extend %list;
+  @include flexbox();
+  @include typography(500, 14px, 1.14, 0.02em);
 
-  &-list-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 
-  &-list-link {
+  &__link {
     @extend %link;
     padding: 32px 0px;
     color: $text-header;
@@ -20,7 +20,7 @@
       color $time $time-function;
   }
 
-  &-list-link.current::after {
+  &__link.current::after {
     display: block;
     position: relative;
     left: 0;
@@ -34,9 +34,9 @@
     background-color: $color-accent;
   }
 
-  &-list-link.current,
-  &-list-link:hover,
-  &-list-link:focus {
+  &__link.current,
+  &__link:hover,
+  &__link:focus {
     color: $color-accent;
   }
 }

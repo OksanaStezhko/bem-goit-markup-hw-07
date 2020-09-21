@@ -2,7 +2,7 @@
   @extend %section;
   background-color: $bgd-second;
 
-  &-title {
+  &__title {
     @extend %nomargin;
     @include typography-title();
     margin-bottom: 50px;

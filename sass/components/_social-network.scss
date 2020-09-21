@@ -2,14 +2,14 @@
   @extend %list;
   @include flexbox();
 
-  &-item:not(:nth-child(4)) {
+  &__item:not(:nth-child(4)) {
     margin-right: 10px;
   }
-  &-icon {
+  &__icon {
     width: 20px;
     height: 20px;
   }
-  &-link {
+  &__link {
     @extend %link;
     @include flexbox(center, center);
     width: 44px;
@@ -17,24 +17,24 @@
     border-radius: 50%;
   }
 
-  .team &-link {
+  .team &__link {
     background-color: $bgd-icon-footer;
     fill: $color-icon;
     transition: background-color $time $time-function, fill $time $time-function;
   }
-  .team &-link:hover,
-  .team &-link:focus {
+  .team &__link:hover,
+  .team &__link:focus {
     background-color: $color-accent;
     fill: $text-on-dark;
   }
 
-  .footer &-link {
+  .footer &__link {
     background-color: $bgd-icon-footer;
     fill: $text-on-dark;
     transition: background-color $time $time-function;
   }
-  .footer &-link:hover,
-  .footer &-link:focus {
+  .footer &__link:hover,
+  .footer &__link:focus {
     background-color: $color-accent;
   }
 }

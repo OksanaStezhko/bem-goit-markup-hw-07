@@ -3,21 +3,17 @@
   padding-bottom: 60px;
   background-color: $color-section;
 
-  &-container {
-    @include flexbox(baseline);
-  }
-
-  &-box-contacts {
+  &__box-contacts {
     margin-right: 70px;
     min-width: 231px;
     text-align: start;
   }
 
-  &-box-form {
+  &__box-form {
     margin-left: auto;
   }
 
-  &-label {
+  &__label {
     @extend %nomargin;
     margin-bottom: 20px;
 

@@ -22,7 +22,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  &-button {
+  &__button {
     @extend %button;
     @include flexbox();
     position: relative;
@@ -30,7 +30,7 @@
     padding-right: 28px;
   }
 
-  &-button::after {
+  &__button::after {
     position: absolute;
     top: 50%;
     right: 0;

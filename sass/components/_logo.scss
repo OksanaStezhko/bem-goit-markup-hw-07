@@ -5,20 +5,24 @@
   font-family: Raleway, sans-serif;
   color: $text-header;
 
-  &-part-one {
-    color: $color-accent;
-  }
-
-  &-part-two {
-    color: $text-on-dark;
-  }
-
-  &-navigation {
+  &--navigation {
     margin-right: 93px;
     padding: 24px 0px 25px;
   }
 
-  &-footer {
+  &--footer {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &--part-one {
+    color: $color-accent;
+  }
+
+  &--part-two {
+    color: $text-on-dark;
+  }
+
+  &--footer {
     display: block;
     margin-bottom: 20px;
   }

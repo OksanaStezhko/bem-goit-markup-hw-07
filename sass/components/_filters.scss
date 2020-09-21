@@ -7,11 +7,11 @@
   padding-bottom: 16px;
   cursor: pointer;
 
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 8px;
   }
 
-  &-button {
+  &__button {
     padding: 6px 22px;
     @include typography(500, 16px, 1.62);
     color: $text-header;
@@ -26,8 +26,8 @@
       color $time $time-function;
   }
 
-  &-button:hover,
-  &-button:focus {
+  &__button:hover,
+  &__button:focus {
     color: $text-on-dark;
     background-color: $color-accent;
     box-shadow: $shadow-button-filters;

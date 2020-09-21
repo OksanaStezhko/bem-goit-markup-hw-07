@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $time $time-function $time;
 
-  &-title {
+  &__title {
     @extend %nomargin;
     margin-bottom: 15px;
 
@@ -38,7 +38,7 @@
     text-align: center;
   }
 
-  &-button-close {
+  &__button-close {
     @include flexbox(center, center);
     position: absolute;
     top: 8px;
@@ -54,7 +54,7 @@
     transition: fill $time $time-function, transform $time $time-function;
   }
 
-  &-button-close:hover {
+  &__button-close:hover {
     fill: $color-accent;
     outline-color: $color-border;
     transform: scale(1.1);

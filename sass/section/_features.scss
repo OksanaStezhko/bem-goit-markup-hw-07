@@ -1,17 +1,17 @@
 .features {
   @extend %section;
+}
 
-  &-list {
-    @extend %list;
-    @include flexbox($justify: space-between);
-  }
+.features-list {
+  @extend %list;
+  @include flexbox($justify: space-between);
 
-  &-card {
+  &__card {
     width: calc((100% - 30px * 3) / 4);
     text-align: start;
   }
 
-  &-label {
+  &__label {
     @extend %nomargin;
     margin-bottom: 10px;
 
@@ -20,7 +20,7 @@
     text-transform: uppercase;
   }
 
-  &-image {
+  &__image {
     @include flexbox(center, center);
     margin-bottom: 30px;
     padding-top: 25px;
@@ -31,13 +31,13 @@
     border-radius: 4px;
   }
 
-  &-icon {
+  &__icon {
     --color2: #2196f3;
     width: 70px;
     height: 70px;
   }
 
-  &-text {
+  &__text {
     @extend %nomargin;
     @include typography(400, 14px, 1.71);
     color: $text-main;

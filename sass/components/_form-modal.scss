@@ -2,7 +2,7 @@
   display: block;
   text-align: center;
 
-  &-submit {
+  &__submit {
     @extend %button;
     padding-left: 55px;
     padding-right: 55px;
@@ -10,11 +10,11 @@
     transition: backrgound-color $time $time-function;
   }
 
-  &-submit:hover {
+  &__submit:hover {
     background-color: $bgd-hover;
   }
 
-  &-submit:disabled {
+  &__submit:disabled {
     background-color: $color-icon;
   }
 }

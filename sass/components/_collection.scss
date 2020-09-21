@@ -2,14 +2,14 @@
   @extend %list;
   @include flexbox($wrap: wrap);
 
-  &-item {
+  &__item {
     @include flexbox();
     width: calc((100% - 30px * 5) / 6);
   }
-  &-item:not(:nth-child(6n)) {
+  &__item:not(:nth-child(6n)) {
     margin-right: 30px;
   }
-  &-link {
+  &__link {
     @extend %link;
     @include flexbox(center, center);
     height: 90px;
@@ -20,8 +20,8 @@
     transition: border-color $time $time-function, fill $time $time-function;
   }
 
-  &-link:hover,
-  &-link:focus {
+  &__link:hover,
+  &__link:focus {
     fill: $color-accent;
     border: 1px solid $color-accent;
   }

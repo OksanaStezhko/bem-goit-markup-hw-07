@@ -2,19 +2,19 @@
   @extend %nomargin;
   @include typography(400, 14px, 1.71);
 
-  &-mail {
+  &__mail {
     @extend %nomargin;
     margin-bottom: 9px;
     color: $text-on-dark;
   }
 
-  &-email,
-  &-tel {
+  &__email,
+  &__tel {
     @extend %link;
     display: block;
     color: $color-link-address;
   }
-  &-email {
+  &__email {
     margin-bottom: 9px;
   }
 }

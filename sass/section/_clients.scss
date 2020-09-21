@@ -1,7 +1,7 @@
 .clients {
   @extend %section;
 
-  &-title {
+  &__title {
     @extend %nomargin;
     margin-bottom: 50px;
     @include typography-title;
