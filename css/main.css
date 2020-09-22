@@ -95,7 +95,7 @@ img {
   margin-bottom: 20px;
 }
 
-.topline {
+.container--topline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,20 +229,6 @@ img {
 
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
-}
-
-.container--footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
 .primary {
@@ -675,6 +661,20 @@ img {
   text-align: start;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.container--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .form-join {
