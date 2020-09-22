@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.navigation, .primary__title, .features-list__label, .features-list__text, .activity__title, .activity-list__label, .team__title, .members__title, .members__name, .members__position, .clients__title, .footer__label, .address, .address__mail, .projects__overley, .projects__name, .projects__label, .modal__title {
+.box-social__label, .box-form__label, .navigation, .primary__title, .features-list__label, .features-list__text, .activity__title, .activity-list__label, .team__title, .members__title, .members__name, .members__position, .clients__title, .address, .address__mail, .projects__overley, .projects__name, .projects__label, .modal__title {
   margin: 0px;
 }
 
@@ -34,6 +34,19 @@
   background-color: #2196f3;
   border: none;
   border-radius: 4px;
+}
+
+.box-social__label, .box-form__label {
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: start;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .container {
@@ -640,27 +653,14 @@ img {
   background-color: #2f303a;
 }
 
-.footer__box-contacts {
+.box-contacts {
   margin-right: 70px;
   min-width: 231px;
   text-align: start;
 }
 
-.footer__box-form {
+.box-form {
   margin-left: auto;
-}
-
-.footer__label {
-  margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-align: start;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 
 .container--footer {

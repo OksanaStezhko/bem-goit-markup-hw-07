@@ -2,25 +2,23 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $color-section;
+}
 
-  &__box-contacts {
-    margin-right: 70px;
-    min-width: 231px;
-    text-align: start;
-  }
+.box-contacts {
+  margin-right: 70px;
+  min-width: 231px;
+  text-align: start;
+}
 
-  &__box-form {
-    margin-left: auto;
-  }
-
+.box-social {
   &__label {
-    @extend %nomargin;
-    margin-bottom: 20px;
-
-    @include typography-label;
-    text-align: start;
-    color: $text-on-dark;
-    text-transform: uppercase;
+    @extend %footer-label;
+  }
+}
+.box-form {
+  margin-left: auto;
+  &__label {
+    @extend %footer-label;
   }
 }
 
